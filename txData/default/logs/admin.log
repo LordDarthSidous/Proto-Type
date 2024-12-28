@@ -1,0 +1,9 @@
+================================================================
+======== txAdmin v7.3.2 atop fxserver 12168 Starting - 12/28/2024, 9:03:56 AM
+================================================================
+[09:04:31][HunterX75] created admins file
+[09:07:24][HunterX75] Changing global settings via setup stepper and started Deployer.
+[09:07:27][HunterX75] Setting recipe.
+[09:07:57][HunterX75] Running recipe.
+[09:10:05][HunterX75] Completed and committed server deploy.
+[09:10:49][HunterX75] executed "RESTART SERVER"
