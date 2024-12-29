@@ -1,12 +1,24 @@
 return {
 	General = {
-		name = 'Shop',
+		name = 'Conv. Store',
 		blip = {
 			id = 59, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'burger', price = 10 },
-			{ name = 'water', price = 10 },
-			{ name = 'cola', price = 10 },
+			{ name = 'sandwich', price = 5 },
+			{ name = 'phatc_bch', price = 3 },
+			{ name = 'phatc_rib', price = 3 },
+			{ name = 'donut_chc', price = 2 },
+			{ name = 'donut_sby', price = 2 },
+
+			{ name = 'water', price = 4 },
+			{ name = 'ecola', price = 3 },
+			{ name = 'sprunk', price = 3 },
+			{ name = 'orangotang', price = 3 },
+			{ name = 'ejunk', price = 5 },
+
+			{ name = 'bandage', price = 5 },
+			--{ name = 'wallet', price = 3 },
+
 		}, locations = {
 			vec3(25.7, -1347.3, 29.49),
 			vec3(-3038.71, 585.9, 7.9),
@@ -19,20 +31,172 @@ return {
 			vec3(2557.94, 382.05, 108.62),
 			vec3(373.55, 325.56, 103.56),
 		}, targets = {
-			{ loc = vec3(25.06, -1347.32, 29.5), length = 0.7, width = 0.5, heading = 0.0, minZ = 29.5, maxZ = 29.9, distance = 1.5 },
-			{ loc = vec3(-3039.18, 585.13, 7.91), length = 0.6, width = 0.5, heading = 15.0, minZ = 7.91, maxZ = 8.31, distance = 1.5 },
-			{ loc = vec3(-3242.2, 1000.58, 12.83), length = 0.6, width = 0.6, heading = 175.0, minZ = 12.83, maxZ = 13.23, distance = 1.5 },
-			{ loc = vec3(1728.39, 6414.95, 35.04), length = 0.6, width = 0.6, heading = 65.0, minZ = 35.04, maxZ = 35.44, distance = 1.5 },
-			{ loc = vec3(1698.37, 4923.43, 42.06), length = 0.5, width = 0.5, heading = 235.0, minZ = 42.06, maxZ = 42.46, distance = 1.5 },
-			{ loc = vec3(1960.54, 3740.28, 32.34), length = 0.6, width = 0.5, heading = 120.0, minZ = 32.34, maxZ = 32.74, distance = 1.5 },
-			{ loc = vec3(548.5, 2671.25, 42.16), length = 0.6, width = 0.5, heading = 10.0, minZ = 42.16, maxZ = 42.56, distance = 1.5 },
-			{ loc = vec3(2678.29, 3279.94, 55.24), length = 0.6, width = 0.5, heading = 330.0, minZ = 55.24, maxZ = 55.64, distance = 1.5 },
-			{ loc = vec3(2557.19, 381.4, 108.62), length = 0.6, width = 0.5, heading = 0.0, minZ = 108.62, maxZ = 109.02, distance = 1.5 },
-			{ loc = vec3(373.13, 326.29, 103.57), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
-		}
+			{
+                ped = 'a_f_o_ktown_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(-706.039, -914.633, 18.215),
+                heading = 90.458,
+            },
+			{
+                ped = 'a_f_y_soucent_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(24.836, -1346.211, 28.496),
+                heading = 273.823,
+            },
+			{
+                ped = 'a_m_m_indian_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(-47.359, -1758.73, 28.421),
+                heading =  46.116,
+            },
+			{
+                ped = 'a_f_y_indian_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(1164.989, -323.667, 68.205),
+                heading = 98.595,
+            },
+			{
+                ped = 'a_f_y_vinewood_03',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(373.183, 327.384, 102.566),
+                heading = 254.495,
+            },
+			{
+                ped = 'a_m_m_ktown_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(-1819.37, 793.611, 137.08),
+                heading =  131.65,
+            },
+			{
+                ped = 'a_m_y_eastsa_02',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(2556.399, 381.284, 107.622),
+                heading =  359.335,
+            },
+			{
+                ped = 'a_f_o_salton_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(2677.32, 3279.7, 54.241), -- Sandy Highway
+                heading =  327.877,
+            },
+			{
+                ped = 's_f_y_sweatshop_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(1959.53, 3740.73, 31.343), -- Sandy 27\7 
+                heading =  304.124,
+            },
+			{
+                ped = 'g_m_y_mexgoon_02',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(548.3, 2670.58, 41.156), -- Harmony 24\7
+                heading =  99.77,
+            },
+			--[[{
+                ped = 'cs_mrsphillips',
+                scenario = 'WORLD_HUMAN_SMOKING_CLUBHOUSE',
+                loc = vec3(1392.32, 3606.306, 34.10), -- Ace Liquor Conv store
+                heading =  198.709,
+            },]]
+			{
+                ped = 'a_f_o_salton_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(1728.09, 6416.18, 34.037), -- Pateto Highway Store 
+                heading =   242.241,
+            },
+			{
+                ped = 'a_m_m_farmer_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(1697.266, 4923.314, 41.063), -- Grapeseed LTD
+                heading =   331.47,
+            },
+			{
+                ped = 'a_m_y_beachvesp_02',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(-3243.64, 1000.1, 11.83), -- Store Sea front2 
+                heading =   355.046,
+            },
+			{
+                ped = 'a_m_y_beachvesp_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(-3040.31, 584.12, 6.908), -- Store Sea Front 
+                heading =   17.934,
+            },
+			{
+                ped = 's_f_y_sweatshop_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(161.05, 6642.27, 30.698), -- Paleto Gas station
+                heading =  223.12,
+            },
+		},
 	},
 
 	Liquor = {
+		name = 'Liquor Store',
+		blip = {
+			id = 93, colour = 27, scale = 0.8
+		}, inventory = {
+			{ name = 'water', price = 10 },
+			{ name = 'rancho_beer', price = 4 },
+			{ name = 'dusche_beer', price = 5 },
+			{ name = 'stronzo_beer', price = 5 },
+			{ name = 'patriot_beer', price = 3 },
+			
+			{ name = 'cigar', price = 5 },
+			{ name = 'box_rancho_beer', price = 20 },
+			{ name = 'box_dusche_beer', price = 25 },
+			{ name = 'box_stronzo_beer', price = 25 },
+			{ name = 'box_patriot_beer', price = 18 },
+
+		}, locations = {
+			vec3(1135.808, -982.281, 46.415),
+			vec3(-1222.915, -906.983, 12.326),
+			vec3(-1487.553, -379.107, 40.163),
+			vec3(-2968.243, 390.910, 15.043),
+			vec3(1166.024, 2708.930, 38.157),
+			vec3(1392.562, 3604.684, 34.980),
+			vec3(-1393.409, -606.624, 30.319),
+			vec3(-2966.412, 391.526, 14.043),
+		},  targets = {
+			{
+                ped = 'a_m_y_soucent_03',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(-1221.451, -907.974, 11.326),
+                heading = 34.865,
+            },
+			{
+                ped = 'a_m_o_genstreet_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(-1486.721, -377.599, 39.163),
+                heading = 134.444,
+            },
+			{
+                ped = 'a_f_o_indian_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(1134.287, -983.168, 45.415),
+                heading = 275.97,
+            },
+			{
+                ped = 'a_m_m_salton_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(1165.301, 2710.945, 37.157),
+                heading = 177.103,
+            },
+			{
+                ped = 'a_m_y_golfer_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(-160.633, 6320.865, 30.586),
+                heading = 315.998,
+            },
+			{
+                ped = 'a_f_y_indian_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT_FACILITY',
+                loc = vec3(-2966.412, 391.526, 14.043),
+                heading = 88.237,
+            },
+		},
+	},
+
+	--[[Liquor = {
 		name = 'Liquor Store',
 		blip = {
 			id = 93, colour = 69, scale = 0.8
@@ -56,7 +220,7 @@ return {
 			{ loc = vec3(1165.95, 2710.20, 38.26), length = 0.6, width = 0.5, heading = 178.84, minZ = 38.1, maxZ = 38.5, distance = 1.5 },
 			{ loc = vec3(1393.0, 3605.95, 35.11), length = 0.6, width = 0.6, heading = 200.0, minZ = 35.0, maxZ = 35.4, distance = 1.5 }
 		}
-	},
+	},--]]
 
 	YouTool = {
 		name = 'YouTool',
@@ -73,6 +237,92 @@ return {
 	},
 
 	Ammunation = {
+		name = 'Ammunation',
+		blip = {
+			id = 110, colour = 69, scale = 0.8
+		}, inventory = {
+			{ name = 'WEAPON_CERAMICPISTOL', price = 1000, 
+			metadata = { registered = true }, license = 'weapon' },
+			{ name = 'WEAPON_PISTOLXM3', price = 1000, 
+			metadata = { registered = true }, license = 'weapon' },
+			{ name = 'WEAPON_PISTOL', price = 1000, 
+			metadata = { registered = true }, license = 'weapon' },
+			{ name = 'WEAPON_KNIFE', price = 200 },
+			{ name = 'WEAPON_BAT', price = 100 },
+
+			{ name = 'ammo-9', price = 6 },
+			
+		}, locations = {
+			vec3(17.965, -1107.855, 28.797),
+			vec3(813.623, -2155.137, 28.619),
+			vec3(841.186, -1028.662, 27.194),
+			vec3(247.151, -51.427, 68.941),
+			vec3(-659.184, -939.488, 20.829),
+			vec3(-3167.201, 1087.492, 19.838),
+			vec3(-326.272, 6081.345, 30.454),
+			vec3(1697.47, 3757.832, 33.705),
+			vec3(-1112.706, 2697.395, 17.554),
+			
+		}, targets = {
+			{
+                ped = 'u_m_y_gunvend_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_FACILITY',
+                loc = vec3(18.577, -1108.187, 28.797),
+                heading = 161.055,
+            },
+			{
+                ped = 'cs_russiandrunk',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_FACILITY',
+                loc = vec3(813.623, -2155.137, 28.619),
+                heading =  1.295,
+            },
+			{
+                ped = 'cs_old_man1a',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_FACILITY',
+                loc = vec3(841.186, -1028.662, 27.194),
+                heading =  268.666,
+            },
+			{
+                ped = 'a_m_y_busicas_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_FACILITY',
+                loc = vec3(247.151, -51.427, 68.941),
+                heading =   336.691,
+            },
+			{
+                ped = 'a_m_o_ktown_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_FACILITY',
+                loc = vec3(-659.184, -939.488, 20.829),
+                heading = 93.863,
+            },
+			{
+                ped = 'a_m_y_beachvesp_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_FACILITY',
+                loc = vec3(-3167.201, 1086.952, 19.838),
+                heading = 154.013,
+            },
+			{
+                ped = 'a_m_y_hasjew_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_FACILITY',
+                loc = vec3(-326.272, 6081.345, 30.454),
+                heading = 135.463,
+            },
+			{
+                ped = 'a_m_y_salton_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_FACILITY',
+                loc = vec3(1697.47, 3757.832, 33.705),
+                heading = 137.834,
+            },
+			{
+                ped = 'a_m_y_stlat_01',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_FACILITY',
+                loc = vec3(-1112.706, 2697.395, 17.554),
+                heading = 136.716,
+            },
+			
+		}
+	},
+
+	--[[Ammunation = {
 		name = 'Ammunation',
 		blip = {
 			id = 110, colour = 69, scale = 0.8
@@ -102,7 +352,7 @@ return {
 			{ loc = vec3(-1117.61, 2700.26, 18.67), length = 0.6, width = 0.5, heading = 221.82, minZ = 18.5, maxZ = 18.9, distance = 2.0 },
 			{ loc = vec3(841.05, -1034.76, 28.31), length = 0.6, width = 0.5, heading = 360.0, minZ = 28.2, maxZ = 28.6, distance = 2.0 }
 		}
-	},
+	},--]]
 
 	PoliceArmoury = {
 		name = 'Police Armoury',
@@ -156,7 +406,36 @@ return {
 		}
 	},
 
-	VendingMachineDrinks = {
+	CriminalDealers = {
+		name = 'Dealer',
+		inventory = {
+			{ name = 'cigarette', price = 3 },
+			{ name = 'phone_burner', price = 100 },
+			{ name = 'lockpick', price = 11 },
+			{ name = 'WEAPON_SNSPISTOL', price = 350, metadata = { registered = false }},
+			{ name = 'ammo-45', price = 9 },
+			{ name = 'bodyarmor_1', price = 125 },
+
+		}, locations = {
+			vec3(-1216.225, -1473.32, 4.334),
+			
+		}, targets = {
+			{
+                ped = 'ig_clay',
+                scenario = 'WORLD_HUMAN_LEANING',
+                loc = vec3(-1214.391, -1474.564, 3.334),
+                heading = 126.35,
+            },
+			{
+                ped = 'ig_talmm',
+                scenario = 'WORLD_HUMAN_SMOKING',
+                loc = vec3(-1490.583, -658.408, 28.025),
+                heading = 221.602,
+            },
+		}
+	},
+
+	--[[VendingMachineDrinks = {
 		name = 'Vending Machine',
 		inventory = {
 			{ name = 'water', price = 10 },
@@ -166,4 +445,46 @@ return {
 			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`
 		}
 	}
+
+		VendingMachineDrinks = {
+		name = 'Vending Machine',
+		inventory = {
+			{ name = 'water', price = 4 },
+			{ name = 'ecola', price = 3 },
+			{ name = 'sprunk', price = 3 },
+			{ name = 'orangotang', price = 3 },
+			{ name = 'ejunk', price = 5 },
+		},
+		model = {
+			'prop_vend_soda_02', 'prop_vend_water_01', 'prop_vend_soda_01', 
+			'ch_chint10_vending_smallroom_01', 'sf_prop_sf_vend_drink_01a'
+		}
+	},
+
+	VendingMachineSnacks = {
+		name = 'Vending Machine',
+		inventory = {
+			{ name = 'phatc_rib', price = 3 },
+			{ name = 'phatc_bch', price = 3 },
+			{ name = 'ps_qs', price = 2 },
+			{ name = 'apple', price = 2 },
+			{ name = 'banana', price = 2 },
+		},
+		model = {
+			'prop_vend_snak_01', 'prop_vend_snak_01_tu'
+		}
+	},
+
+	VendingMachineCoffee = {
+		name = 'Coffee Machine',
+		inventory = {
+			{ name = 'coffee_black', price = 4 },
+			{ name = 'coffee_mocha', price = 3 },
+			{ name = 'coffee_cpcno', price = 3 },
+			{ name = 'coffee_amrcno', price = 3 }
+		},
+		model = {
+			'prop_vend_coffe_01'
+		}
+	}--]]
 }

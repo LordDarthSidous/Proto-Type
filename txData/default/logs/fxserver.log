@@ -1,8 +1,13 @@
+================================================================
+======== Log Rotated - 12/29/2024, 7:03:37 AM                   
+================================================================
 [             TXADMIN] ================================================================ 
-[             TXADMIN] ======== [29216] FXServer Starting - 12/28/2024, 9:10:05 AM      
+[             TXADMIN] ======== [21856] FXServer Starting - 12/29/2024, 7:03:38 AM      
 [             TXADMIN] ================================================================ 
 [           resources] Scanning resources.
-[           resources] Found 98 resources.
+[       resources:Dev] Warning: Dev does not have a resource manifest (fxmanifest.lua)
+[           resources] Found 99 resources.
+[           resources] 1 warning was encountered.
 [          svadhesive] Authenticating server license key...
 [          svadhesive] Server license key authentication succeeded. Welcome!
 [    c-scripting-core] Creating script environments for sessionmanager
@@ -35,8 +40,6 @@
 [           resources] Started resource ox_inventory
 [    c-scripting-core] Creating script environments for ox_fuel
 [           resources] Started resource ox_fuel
-[    c-scripting-core] Creating script environments for qbx_adminmenu
-[           resources] Started resource qbx_adminmenu
 [    c-scripting-core] Creating script environments for qbx_medical
 [           resources] Started resource qbx_medical
 [    c-scripting-core] Creating script environments for qbx_ambulancejob
@@ -139,6 +142,8 @@
 [    c-scripting-core] Creating script environments for mana_audio
 [           resources] Started resource mana_audio
 [           resources] Started resource mhacking
+[    c-scripting-core] Creating script environments for ps-adminmenu
+[           resources] Started resource ps-adminmenu
 [           resources] Started resource safecracker
 [    c-scripting-core] Creating script environments for screenshot-basic
 [           resources] Started resource screenshot-basic
@@ -168,11 +173,11 @@
 [script:scully_emotem] [scully_emotemenu] [INFO] Current Version: 1.9.9f
 [script:scully_emotem] [scully_emotemenu] [INFO] Latest Version: 1.9.9f
 [script:scully_emotem] [scully_emotemenu] [INFO] You are running the latest version.
-[ citizen-server-impl] server thread hitch warning: timer interval of 586 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 620 milliseconds
 [      script:oxmysql] [10.4.27-MariaDB] Database server connection established!
-[script:qbx_core:warn] Warning: Table 'properties' does not exist in database, please remove it from qbx_core/config/server.lua or create the table
-[       script:ox_lib] An update is available for ox_fuel (current version: 1.4.0)
-[       script:ox_lib] https://github.com/overextended/ox_fuel/releases/tag/v1.5.1
+[    script:xt-prison] [xt-prison] [INFO] Initializing Table: xt_prison
+[    script:xt-prison] [xt-prison] [INFO] Initializing Table: xt_prison_items
+[     script:qbx_core] [qbx_core] [INFO] Removed invalid groups from player_groups table
 [ citizen-server-impl]         fff                          
 [ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
 [ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
@@ -180,103 +185,32 @@
 [ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
 [ citizen-server-impl]                                      
 [ citizen-server-impl] Authenticated with cfx.re Nucleus: https://hunterx75-r9zq7g.users.cfx.re/
-[      script:oxmysql] [10.4.27-MariaDB] ox_doorlock took 346.1724ms to execute a query!
-[      script:oxmysql] SELECT `id`, `name`, `data` FROM `ox_doorlock` []
-[      script:oxmysql] [10.4.27-MariaDB] qbx_core took 535.6665ms to execute a query!
-[      script:oxmysql]         CREATE TABLE IF NOT EXISTS `users` (
-[      script:oxmysql]             `userId` int UNSIGNED NOT NULL AUTO_INCREMENT,
-[      script:oxmysql]             `username` varchar(255) DEFAULT NULL,
-[      script:oxmysql]             `license` varchar(50) DEFAULT NULL,
-[      script:oxmysql]             `license2` varchar(50) DEFAULT NULL,
-[      script:oxmysql]             `fivem` varchar(20) DEFAULT NULL,
-[      script:oxmysql]             `discord` varchar(30) DEFAULT NULL,
-[      script:oxmysql]             PRIMARY KEY (`userId`)
-[      script:oxmysql]         ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-[      script:oxmysql]      []
+[       script:ox_lib] An update is available for ox_fuel (current version: 1.4.0)
+[       script:ox_lib] https://github.com/overextended/ox_fuel/releases/tag/v1.5.1
 [     script:qbx_core] 
 [     script:qbx_core] Welcome to Qbox!
 [     script:qbx_core] To learn more, please check out the documentation at https://docs.qbox.re/.
 [     script:qbx_core] To turn this message off, add set qbx:acknowledge true to your cfg files.
 [     script:qbx_core] 
-[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 299 items
-[      script:oxmysql] [10.4.27-MariaDB] ox_inventory took 850.0077ms to execute a query!
-[      script:oxmysql] SHOW COLUMNS FROM `player_vehicles` []
-[      script:oxmysql] [10.4.27-MariaDB] xt-prison took 1229.6658ms to execute a query!
-[      script:oxmysql]             CREATE TABLE IF NOT EXISTS `xt_prison` (
-[      script:oxmysql]             `identifier` VARCHAR(100) NOT NULL,
-[      script:oxmysql]             `jailtime` INT(11) NOT NULL DEFAULT '0',
-[      script:oxmysql]             PRIMARY KEY (`identifier`) USING BTREE
-[      script:oxmysql]         );
-[      script:oxmysql]          []
-[    script:xt-prison] [xt-prison] [INFO] Initializing Table: xt_prison
-[      script:oxmysql] [10.4.27-MariaDB] ox_inventory took 1079.3698ms to execute a query!
-[      script:oxmysql] CREATE TABLE `ox_inventory` (
-[      script:oxmysql] 			`owner` varchar(60) DEFAULT NULL,
-[      script:oxmysql] 			`name` varchar(100) NOT NULL,
-[      script:oxmysql] 			`data` longtext DEFAULT NULL,
-[      script:oxmysql] 			`lastupdated` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-[      script:oxmysql] 			UNIQUE KEY `owner` (`owner`,`name`)
-[      script:oxmysql] 		) []
-[      script:oxmysql] [10.4.27-MariaDB] qbx_properties took 1228.0977ms to execute a query!
-[      script:oxmysql] CREATE TABLE IF NOT EXISTS `properties` (
-[      script:oxmysql]     `id` INT NOT NULL AUTO_INCREMENT,
-[      script:oxmysql]     `property_name` VARCHAR(255) NOT NULL, /* simple label that can be used to identify which property it is. I.e. used for spawn list */
-[      script:oxmysql]     `coords` JSON NOT NULL,
-[      script:oxmysql]     `price` INT NOT NULL DEFAULT 0,
-[      script:oxmysql]     `owner` VARCHAR(50) COLLATE utf8mb4_unicode_ci, /* citizen ID of the owner */
-[      script:oxmysql]     `interior` VARCHAR(255) NOT NULL, /* the interior name, can range from IPL name to a shell hash that needs to spawn in */
-[      script:oxmysql]     `keyholders` JSON NOT NULL DEFAULT (JSON_OBJECT()), /* citizen IDs of other people that have access */
-[      script:oxmysql]     `rent_interval` INT DEFAULT NULL, /* the rent interval in hours */
-[      script:oxmysql]     `interact_options` JSON NOT NULL DEFAULT (JSON_OBJECT()), /* clothing and exit points */
-[      script:oxmysql]     `stash_options` JSON NOT NULL DEFAULT (JSON_OBJECT()), /* multiple stash support */
-[      script:oxmysql]     FOREIGN KEY (owner) REFERENCES `players` (`citizenid`),
-[      script:oxmysql]     PRIMARY KEY (id)
-[      script:oxmysql] ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci; []
-[      script:oxmysql] [10.4.27-MariaDB] xt-prison took 1232.0560ms to execute a query!
-[      script:oxmysql]             CREATE TABLE IF NOT EXISTS `xt_prison_items` (
-[      script:oxmysql]             `owner` VARCHAR(60) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
-[      script:oxmysql]             `data` LONGTEXT NULL DEFAULT NULL COLLATE 'utf8_general_ci',
-[      script:oxmysql]             UNIQUE INDEX `owner` (`owner`) USING BTREE
-[      script:oxmysql]         );
-[      script:oxmysql]          []
-[    script:xt-prison] [xt-prison] [INFO] Initializing Table: xt_prison_items
-[      script:oxmysql] [10.4.27-MariaDB] ox_inventory took 232.0446ms to execute a query!
-[      script:oxmysql] SELECT data FROM ox_inventory WHERE owner = ? AND name = ? ["","policetrash_1"]
-[      script:oxmysql] [10.4.27-MariaDB] qbx_lapraces took 1299.1285ms to execute a query!
-[      script:oxmysql] SELECT * FROM lapraces []
-[      script:oxmysql] [10.4.27-MariaDB] qbx_core took 1117.7829ms to execute a query!
-[      script:oxmysql] SELECT DISTINCT `group`, type, grade FROM player_groups []
-[     script:qbx_core] [qbx_core] [INFO] Removed invalid groups from player_groups table
-[      script:oxmysql] [10.4.27-MariaDB] qbx_drugs took 811.4290ms to execute a query!
-[      script:oxmysql] SELECT * FROM dealers []
-[      script:oxmysql] [10.4.27-MariaDB] Renewed-Banking took 822.8769ms to execute a query!
-[      script:oxmysql] SELECT * FROM bank_accounts_new []
-[      script:oxmysql] [10.4.27-MariaDB] qbx_properties took 386.2081ms to execute a query!
-[      script:oxmysql] CREATE TABLE IF NOT EXISTS `properties_decorations` (
-[      script:oxmysql]     `id` BIGINT NOT NULL AUTO_INCREMENT,
-[      script:oxmysql]     `property_id` INT NOT NULL,
-[      script:oxmysql]     `model` VARCHAR(255) NOT NULL,
-[      script:oxmysql]     `coords` JSON NOT NULL,
-[      script:oxmysql]     `rotation` JSON NOT NULL,
-[      script:oxmysql]     FOREIGN KEY (property_id) REFERENCES `properties` (`id`) ON DELETE CASCADE,
-[      script:oxmysql]     PRIMARY KEY (id)
-[      script:oxmysql] ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci; []
-[      script:oxmysql] [10.4.27-MariaDB] ox_inventory took 1054.2552ms to execute a query!
-[      script:oxmysql] ALTER TABLE `player_vehicles` ADD COLUMN `glovebox` LONGTEXT NULL []
-[      script:oxmysql] [10.4.27-MariaDB] qbx_properties took 439.6442ms to execute a query!
-[      script:oxmysql] SELECT id FROM properties WHERE owner IS NOT NULL AND rent_interval IS NOT NULL []
-[      script:oxmysql] [10.4.27-MariaDB] ox_inventory took 1115.1054ms to execute a query!
-[      script:oxmysql] ALTER TABLE `player_vehicles` ADD COLUMN `trunk` LONGTEXT NULL []
-[             TXADMIN] txaReportResources 
-[      script:monitor] [txAdmin] Sending resources list to txAdmin.
-[             TXADMIN] txaEvent "serverShuttingDown" "{＂delay＂:5000,＂author＂:＂HunterX75＂,＂message＂:＂Server restarting (admin request).＂}" 
-[      script:monitor] [txAdmin] Server shutdown imminent. Kicking all players.
-
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 389 items
+[ citizen-server-impl] server thread hitch warning: timer interval of 174 milliseconds
+[     script:qbx_core] [qbx_core] [INFO] HunterX (Citizen ID: F52HV909 ID: 1) has successfully loaded!
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (109.1068 ms)
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (42.9435 ms)
+[      script:oxmysql] [10.4.27-MariaDB] illenium-appearance took 229.5296ms to execute a query!
+[      script:oxmysql] DELETE FROM playerskins WHERE citizenid = ? AND model = ? ["F52HV909","mp_m_freemode_01"]
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (179.3091 ms)
+[ citizen-server-main] -> Quitting: SIGHUP received
 [             TXADMIN] ================================================================ 
-[             TXADMIN] ======== [35984] FXServer Starting - 12/28/2024, 9:10:55 AM      
+[             TXADMIN] ======== [36472] FXServer Starting - 12/29/2024, 8:13:36 AM      
 [             TXADMIN] ================================================================ 
 [           resources] Scanning resources.
-[           resources] Found 98 resources.
+[       resources:Dev] Warning: Dev does not have a resource manifest (fxmanifest.lua)
+[           resources] Found 99 resources.
+[           resources] 1 warning was encountered.
 [          svadhesive] Authenticating server license key...
 [          svadhesive] Server license key authentication succeeded. Welcome!
 [    c-scripting-core] Creating script environments for sessionmanager
@@ -309,8 +243,6 @@
 [           resources] Started resource ox_inventory
 [    c-scripting-core] Creating script environments for ox_fuel
 [           resources] Started resource ox_fuel
-[    c-scripting-core] Creating script environments for qbx_adminmenu
-[           resources] Started resource qbx_adminmenu
 [    c-scripting-core] Creating script environments for qbx_medical
 [           resources] Started resource qbx_medical
 [    c-scripting-core] Creating script environments for qbx_ambulancejob
@@ -413,6 +345,8 @@
 [    c-scripting-core] Creating script environments for mana_audio
 [           resources] Started resource mana_audio
 [           resources] Started resource mhacking
+[    c-scripting-core] Creating script environments for ps-adminmenu
+[           resources] Started resource ps-adminmenu
 [           resources] Started resource safecracker
 [    c-scripting-core] Creating script environments for screenshot-basic
 [           resources] Started resource screenshot-basic
@@ -442,7 +376,7 @@
 [script:scully_emotem] [scully_emotemenu] [INFO] Current Version: 1.9.9f
 [script:scully_emotem] [scully_emotemenu] [INFO] Latest Version: 1.9.9f
 [script:scully_emotem] [scully_emotemenu] [INFO] You are running the latest version.
-[ citizen-server-impl] server thread hitch warning: timer interval of 583 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 617 milliseconds
 [      script:oxmysql] [10.4.27-MariaDB] Database server connection established!
 [    script:xt-prison] [xt-prison] [INFO] Initializing Table: xt_prison
 [    script:xt-prison] [xt-prison] [INFO] Initializing Table: xt_prison_items
@@ -461,5 +395,12 @@
 [     script:qbx_core] To learn more, please check out the documentation at https://docs.qbox.re/.
 [     script:qbx_core] To turn this message off, add set qbx:acknowledge true to your cfg files.
 [     script:qbx_core] 
-[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 299 items
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 389 items
+[ citizen-server-impl] server thread hitch warning: timer interval of 177 milliseconds
+[     script:qbx_core] [qbx_core] [INFO] HunterX (Citizen ID: F52HV909 ID: 1) has successfully loaded!
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (98.8236 ms)
+[script:ox_inventory:] Warning: unable to generate
+[script:ox_inventory:] aluminumitem does not exist[ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (168.4247 ms)
 [ citizen-server-main] -> Quitting: SIGHUP received
