@@ -2095,4 +2095,139 @@ return {
             usetime = 7500,
         },
     },
+
+    -- # Smoking Pack
+
+    ["vape"] = {
+		label = "Vape",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["cubancigar"] = {
+		label = "Cuban Cigar",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["lighter"] = {
+		label = "Lighter",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["liquid"] = {
+		label = "Liquid",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["davidoffcigar"] = {
+		label = "Davidoff Cigar",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["cigarettes_redwood"] = {
+		label = "Redwood Pack",
+		weight = 120,
+		stack = true,
+		close = true,
+	},
+
+	["redwcig"] = {
+		label = "Redwood Cigarette",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["cowboy"] = {
+		label = "Cowboy Pack",
+		weight = 120,
+		stack = true,
+		close = true,
+	},
+
+	["cowboycig"] = {
+		label = "Cowboy Cigarette",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["debonaire"] = {
+		label = "Debonaire Pack",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["cig_debonaire"] = {
+		label = "Debonaire Cigarette",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+    ["69brand"] = {
+        label = "69-Brand Pack",
+        weight = 1,
+        stack = true,
+        close = true,
+    },
+    
+    ["cig_69brand"] = {
+        label = "69-Brand Cigarette",
+        weight = 1,
+        stack = true,
+        close = true,
+    },
+
+	["blackwood_purple"] = {
+		label = "Grape Cigar pack",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["blackwood_yellow"] = {
+		label = "Honey Cigar pack",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["blackwood_white"] = {
+		label = "Cream Cigar pack",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["blackwood_grape"] = {
+		label = "Backwood Grape Cigar",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["blackwood_honey"] = {
+		label = "Backwood Honey Cigar",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["blackwood_cream"] = {
+		label = "Backwoods Russian Cream Cigar",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
 }
